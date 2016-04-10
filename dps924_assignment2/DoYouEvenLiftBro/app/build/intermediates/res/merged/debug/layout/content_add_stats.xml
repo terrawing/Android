@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.student.doyouevenliftbro.AddStatsActivity"
+    tools:showIn="@layout/activity_add_stats">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/addstatslinearlayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/dayHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="1) Choose a date exercise was last performed:"/>
+
+            <LinearLayout
+                android:layout_below="@+id/dayHeading"
+                android:orientation="horizontal"
+                android:id="@+id/spacerPicker1"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></LinearLayout>
+
+            <DatePicker
+                android:layout_below="@+id/spacerPicker1"
+                android:id="@+id/datepicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:startYear="2016"
+                android:endYear="2100"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"></DatePicker>
+
+            <LinearLayout
+                android:layout_below="@+id/datepicker"
+                android:orientation="horizontal"
+                android:id="@+id/spacerPicker2"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></LinearLayout>
+
+            <TextView
+                android:id="@+id/weightHeading"
+                android:layout_below="@+id/spacerPicker2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="2) Enter max weight (lbs) performed:"/>
+
+            <EditText
+                android:layout_below="@+id/weightHeading"
+                android:id="@+id/maxweight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Max weight (lbs)"
+                android:inputType="number"/>
+
+            <LinearLayout
+                android:layout_below="@+id/maxweight"
+                android:orientation="horizontal"
+                android:id="@+id/spacerPicker3"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></LinearLayout>
+
+            <TextView
+                android:id="@+id/setHeading"
+                android:layout_below="@+id/spacerPicker3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="3) Enter number of sets performed:"/>
+
+            <EditText
+                android:layout_below="@+id/setHeading"
+                android:id="@+id/numofsets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Number of sets"
+                android:inputType="number"/>
+
+            <LinearLayout
+                android:layout_below="@+id/maxweight"
+                android:orientation="horizontal"
+                android:id="@+id/spacerPicker4"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></LinearLayout>
+
+            <TextView
+                android:id="@+id/repHeading"
+                android:layout_below="@+id/spacerPicker4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="4) Enter max reps performed:"/>
+
+            <EditText
+                android:layout_below="@+id/weightHeading"
+                android:id="@+id/maxrep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Max reps"
+                android:inputType="number"/>
+
+            <LinearLayout
+                android:layout_below="@+id/maxrep"
+                android:orientation="horizontal"
+                android:id="@+id/spacerPicker5"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></LinearLayout>
+
+            <Button
+                android:id="@+id/addStatsSubmit"
+                android:layout_below="@+id/spacerPicker5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textSize="18dp"
+                android:padding="24dp"
+                android:textAllCaps="false"/>
+
+            <LinearLayout
+                android:layout_below="@+id/addStatsSubmit"
+                android:orientation="horizontal"
+                android:id="@+id/spacerPicker6"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"></LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

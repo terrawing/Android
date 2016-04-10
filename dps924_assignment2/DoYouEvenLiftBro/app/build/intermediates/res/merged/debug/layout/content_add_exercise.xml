@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.student.doyouevenliftbro.AddExerciseActivity"
+    tools:showIn="@layout/activity_add_exercise">
+
+    <TextView
+        android:id="@+id/dayHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="1) Choose a day to add exercise:"/>
+
+    <LinearLayout
+        android:layout_below="@+id/dayHeading"
+        android:orientation="horizontal"
+        android:id="@+id/spacerSpinner1"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"></LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinnerDates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="24dp"
+        android:paddingTop="24dp"
+        android:spinnerMode="dialog"></Spinner>
+
+    <LinearLayout
+        android:layout_below="@+id/spinnerDates"
+        android:orientation="horizontal"
+        android:id="@+id/spacerSpinner2"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"></LinearLayout>
+
+    <Button
+        android:id="@+id/addExerciseSubmit"
+        android:layout_below="@+id/spacerSpinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="18dp"
+        android:padding="24dp"
+        android:textAllCaps="false"/>
+
+
+</RelativeLayout>

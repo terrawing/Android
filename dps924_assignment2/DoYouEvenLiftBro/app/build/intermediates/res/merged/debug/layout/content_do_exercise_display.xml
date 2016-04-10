@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.student.doyouevenliftbro.DoExerciseDisplayActivity"
+    tools:showIn="@layout/activity_do_exercise_display">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/exerciselinearlayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_below="@+id/exerciselinearlayout"
+                android:id="@+id/imageLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+
+                    android:id="@+id/exerciseImage"
+                    android:layout_width="400dp"
+                    android:layout_height="157dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="left"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/spacer1"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></LinearLayout>
+
+
+            <Button
+                android:id="@+id/addStats"
+                android:layout_below="@+id/spacer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Stats"
+                android:textSize="18dp"
+                android:padding="24dp"
+                android:textAllCaps="false"/>
+
+            <LinearLayout
+                android:layout_below="@+id/addStats"
+                android:orientation="horizontal"
+                android:id="@+id/spacer2"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dateLinear"
+                android:layout_below="@+id/spacer2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/dateHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date: "
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id='@+id/dateExercisePerformed'
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dateLinear2"
+                android:layout_below="@+id/dateLinear"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/maxWeightHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Max Weight: "
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id='@+id/maxWeightExercisePerformed'
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dateLinear3"
+                android:layout_below="@+id/dateLinear2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/maxSetHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Number of Set(s): "
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id='@+id/maxSetExercisePerformed'
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dateLinear3b"
+                android:layout_below="@+id/dateLinear3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/maxRepHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Max Rep: "
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id='@+id/maxRepExercisePerformed'
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/dateLinear3b"
+                android:orientation="horizontal"
+                android:id="@+id/spacer3"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dateLinear4"
+                android:layout_below="@+id/spacer3"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/targetMuscleHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Targeted Muscle Group: "
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id='@+id/targetMuscleForExercisePerformed'
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/dateLinear4"
+                android:orientation="horizontal"
+                android:id="@+id/spacer4"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dateLinear5"
+                android:layout_below="@+id/spacer4"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/equipmentUsedHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Equipment Used: "
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id='@+id/equipmentUsedForExercisePerformed'
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/dateLinear5"
+                android:orientation="horizontal"
+                android:id="@+id/spacer5"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dateLinear6"
+                android:layout_below="@+id/spacer5"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/exerciseDescriptionHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Instructions: "
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:id="@+id/exerciseDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
