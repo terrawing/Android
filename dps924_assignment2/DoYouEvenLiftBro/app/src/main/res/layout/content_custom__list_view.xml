@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dip" >
+
+    <TextView
+        android:id="@+id/exerciseNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:paddingBottom="3dp" />
+
+    <LinearLayout
+        android:layout_below="@+id/exerciseNameText"
+        android:id="@+id/mainTextList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/maxWeightHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="Max Weight: "/>
+
+        <TextView
+            android:id="@+id/exerciseWeightText"
+            android:layout_width="wrap_content"
+            android:textStyle="italic"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/removeExercise"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove"
+            android:focusable="false"/>
+
+        <!--<TextView
+            android:id="@+id/exerciseDateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />-->
+
+    </LinearLayout>
+
+
+</RelativeLayout>

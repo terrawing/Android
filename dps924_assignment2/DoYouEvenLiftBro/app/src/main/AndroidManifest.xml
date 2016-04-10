@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.student.doyouevenliftbro">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ViewAllExercisesActivity"
+            android:label="@string/title_activity_view_all_exercises"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ViewExercisesByMuscleActivity"
+            android:label="@string/title_activity_view_exercises_by_muscle"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DisplayAndDoExercisesActivity"
+            android:label="@string/title_activity_display_and_do_exercises"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".OptionsActivity"
+            android:label="@string/title_activity_options"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ViewAllExercise_ListView"
+            android:label="@string/title_activity_view_all_exercise__list_view"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AllExerciseDisplayActivity"
+            android:label="@string/title_activity_exercise"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ExercisesByMuscleActivity"
+            android:label="@string/title_activity_exercises_by_muscle"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddExerciseActivity"
+            android:label="@string/title_activity_add_exercise"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ExercisesPerDayActivity"
+            android:label="@string/title_activity_exercises_per_day"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Draggable_ListView"
+            android:label="@string/title_activity_draggable__list_view"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DoExerciseDisplayActivity"
+            android:label="@string/title_activity_do_exercise_display"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddStatsActivity"
+            android:label="@string/title_activity_add_stats"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Custom_ListView"
+            android:label="@string/title_activity_custom__list_view"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

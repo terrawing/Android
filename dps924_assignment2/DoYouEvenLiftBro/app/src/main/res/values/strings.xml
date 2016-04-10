@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Do You Even Lift Bro</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main_activity">Home</string>
+    <string name="title_activity_view_all_exercises">View All Exercises</string>
+    <string name="title_activity_view_exercises_by_muscle">View Exercises By Muscle</string>
+    <string name="title_activity_display_and_do_exercises">Display And Do Exercises</string>
+    <string name="title_activity_options">Options</string>
+    <string name="load_more">Load More</string>
+
+    <string name="title_activity_view_all_exercise__list_view">ViewAllExercise_ListView</string>
+    <string name="title_activity_exercise">Exercise</string>
+    <string name="title_activity_exercises_by_muscle">Exercises By Muscle</string>
+    <string name="title_activity_add_exercise">Add Exercise</string>
+    <string name="title_activity_exercises_per_day">ExercisesPerDayActivity</string>
+    <string name="title_activity_draggable__list_view">Draggable_ListView</string>
+    <string name="title_activity_do_exercise_display">DoExerciseDisplayActivity</string>
+    <string name="title_activity_add_stats">AddStatsActivity</string>
+    <string name="title_activity_custom__list_view">Custom_ListView</string>
+</resources>
